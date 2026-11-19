@@ -1,0 +1,97 @@
+# Vombatus ursinus (Shaw, 1800) — DCAT Dataset & Package Distribution Manifest
+# Work-Packet: ECO-WP-07A (IntentEco South-Eastern Australia Species Cohort)
+
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+@prefix prov:   <http://www.w3.org/ns/prov#> .
+@prefix dwc:    <http://rs.tdwg.org/dwc/terms/> .
+@prefix uberon: <http://purl.obolibrary.org/obo/UBERON_> .
+@prefix odrl:   <http://www.w3.org/ns/odrl/2/> .
+@prefix qualia: <urn:qualia:taxon:> .
+@prefix q42:    <urn:qualia:q42:> .
+@prefix rel:    <urn:qualia:release:vombatus-ursinus:> .
+@prefix member: <urn:qualia:member:vombatus-ursinus:> .
+
+qualia:vombatus_ursinus a dcat:Dataset ;
+    dct:title "Vombatus ursinus (Bare-Nosed / Common Wombat) Species Hypermedia Dataset"@en ;
+    dct:description "Authoritative taxonomic, UBERON anatomical, fossorial osteology/myology, pelvic dermal rump-shield, distal-colon cubic-scat biomechanics, joint ROM, InstanceState64 ontogeny, grazing ecology, and biocultural Country dataset for Vombatus ursinus (Shaw, 1800) across South-Eastern Australia."@en ;
+    dct:identifier <urn:qualia:taxon:vombatus_ursinus> , <did:q42:taxon:vombatus_ursinus> ;
+    odrl:hasPolicy "SocialPermissiveCommons" ;
+    dct:hasPart member:taxon-ttl ,
+                member:taxon-q42 ,
+                member:index-q42 ,
+                member:claims-ledger ,
+                member:organ-osteology ,
+                member:organ-myology ,
+                member:organ-integument-visceral ,
+                member:cad-vibe-planned ,
+                member:hmc-package-planned .
+
+member:taxon-ttl a dcat:Distribution ;
+    dct:title "Taxon & Biophysical Ontology Source (Turtle 1.1)"@en ;
+    dct:format "text/turtle" ;
+    dcat:accessURL <file:ontology/taxon.ttl> ;
+    q42:lifecycleStatus "authored_eco_wp_07a" .
+
+member:taxon-q42 a dcat:Distribution ;
+    dct:title "Sealed Taxon & Biophysical NQuin Volume (.q42)"@en ;
+    dct:format "application/vnd.qualia.q42" ;
+    dcat:accessURL <file:dist/taxon.q42> ;
+    prov:wasDerivedFrom member:taxon-ttl ;
+    q42:lifecycleStatus "compiled_eco_wp_07a" .
+
+member:index-q42 a dcat:Distribution ;
+    dct:title "Sealed DCAT Package Index NQuin Volume (.q42)"@en ;
+    dct:format "application/vnd.qualia.q42" ;
+    dcat:accessURL <file:dist/index.q42> ;
+    q42:lifecycleStatus "compiled_eco_wp_07a" .
+
+member:claims-ledger a dcat:Distribution ;
+    dct:title "Pinned 193-Row Model Production Claims Ledger (catalogue 2026-10-24.2)"@en ;
+    dct:format "application/json" ;
+    dcat:accessURL <file:dossier/claims.json> ;
+    q42:catalogueVersion "2026-10-24.2" ;
+    q42:catalogueSha256 "c0cb76151bf5d0776afaae4d59d7427efb65633bf359d3f4c2bda83c361c91cb" ;
+    q42:lifecycleStatus "initialized_eco_wp_07a" .
+
+member:organ-osteology a dcat:Distribution ;
+    dct:title "Anatomical Layer 0 — Fossorial Osteology Inventory (UBERON:0001434, 24-Joint Quadruped Rig)"@en ;
+    q42:uberonRoot "UBERON:0001434" ;
+    q42:subsystemList "UBERON:0003129, UBERON:0001682, UBERON:0001759, UBERON:0001130, UBERON:0001094, UBERON:0002228, UBERON:0001105, UBERON:0000976, UBERON:0002102, UBERON:0002398, UBERON:0001465, UBERON:0001271, UBERON:0003661, UBERON:0000981, UBERON:0002387, UBERON:0001452, UBERON:0001095" ;
+    q42:lifecycleStatus "ontology_defined_cad_pending_eco_wp_07b" .
+
+member:organ-myology a dcat:Distribution ;
+    dct:title "Anatomical Layer 1 — Fossorial Myology Inventory (UBERON:0001630, Triceps/Pectoralis/Latissimus Dorsi)"@en ;
+    q42:uberonRoot "UBERON:0001630" ;
+    q42:subsystemList "UBERON:0001630, UBERON:0002356, UBERON:0001498, UBERON:0003662, UBERON:0002255, UBERON:0001377" ;
+    q42:lifecycleStatus "ontology_defined_cad_pending_eco_wp_07b" .
+
+member:organ-integument-visceral a dcat:Distribution ;
+    dct:title "Anatomical Layer 2 — Coarse Pelage, Bare Rhinarium, Backward Pouch, Pelvic Dermal Shield & Distal Colon (UBERON:0002416)"@en ;
+    q42:uberonRoot "UBERON:0002416" ;
+    q42:subsystemList "UBERON:0002099, UBERON:0001756, UBERON:0001757, UBERON:0001831, UBERON:0002097, UBERON:0001319, UBERON:0001155, UBERON:0002398, UBERON:0002387" ;
+    q42:lifecycleStatus "ontology_defined_cad_pending_eco_wp_07b" .
+
+member:cad-vibe-planned a dcat:Distribution ;
+    dct:title "Master 3-Layer VibeScript Zoological CAD Source (ECO-WP-07B Pending)"@en ;
+    dct:format "text/x-vibescript" ;
+    dcat:accessURL <file:source/vombatus-ursinus.vibe> ;
+    q42:lifecycleStatus "pending_eco_wp_07b" .
+
+member:hmc-package-planned a dcat:Distribution ;
+    dct:title "Verified Hypermedia Container (.hmc) + 10D Manifold + EMF + QAC (ECO-WP-07B Pending)"@en ;
+    dct:format "application/vnd.qualia.hmc" ;
+    dcat:accessURL <file:dist/vombatus-ursinus.hmc> ;
+    q42:lifecycleStatus "pending_eco_wp_07b" .
+
+rel:working a dcat:Dataset ;
+    dct:isVersionOf qualia:vombatus_ursinus ;
+    dct:identifier "working-eco-wp-07a" ;
+    rdfs:comment "Single species HMC architecture: individuals instantiate Vombatus ursinus via InstanceState64 (seed, ontogenetic_age_norm, height_scale, site_vigor, environmental_stress) across stages {pouch_young, juvenile_at_heel, subadult, adult_female, adult_male}."@en .
+
+qualia:vombatus_ursinus_template a rdfs:Class ;
+    rdfs:label "Vombatus ursinus Organism Template (InstanceState64)"@en ;
+    rdfs:comment "Organism template distinct from taxon concept, regional occurrence records, synthetic scene instances, and profile depictions (film, open_world_game, cartoon)."@en .

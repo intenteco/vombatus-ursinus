@@ -1,0 +1,125 @@
+{
+  "schema": "synth.semantic-bookmarks/v1",
+  "items": [
+    {
+      "id": "afd-vombatus-ursinus",
+      "url": "https://biodiversity.org.au/afd/taxa/66d42847-c556-4fa3-902c-a91d9f517286",
+      "kind": "taxon_authority",
+      "title": "Australian Faunal Directory (AFD) — Vombatus ursinus (Shaw, 1800)",
+      "requires_api_key": false,
+      "auth": "none",
+      "created_at": 1794983400,
+      "updated_at": 1794983400
+    },
+    {
+      "id": "ala-vombatus-ursinus",
+      "url": "https://bie.ala.org.au/species/https://biodiversity.org.au/afd/taxa/66d42847-c556-4fa3-902c-a91d9f517286",
+      "kind": "species_profile",
+      "title": "Atlas of Living Australia (ALA) — Vombatus ursinus (Bare-Nosed Wombat)",
+      "requires_api_key": false,
+      "auth": "none",
+      "created_at": 1794983400,
+      "updated_at": 1794983400
+    },
+    {
+      "id": "ala-bie-ws-vombatus-ursinus",
+      "url": "https://bie-ws.ala.org.au/ws/species/https://biodiversity.org.au/afd/taxa/66d42847-c556-4fa3-902c-a91d9f517286.json",
+      "kind": "api",
+      "title": "Atlas of Living Australia (ALA) BIE JSON endpoint — Vombatus ursinus",
+      "requires_api_key": false,
+      "auth": "none",
+      "created_at": 1794983400,
+      "updated_at": 1794983400
+    },
+    {
+      "id": "gbif-vombatus-ursinus",
+      "url": "https://www.gbif.org/species/2440301",
+      "kind": "taxon_backbone",
+      "title": "GBIF Backbone — Vombatus ursinus (Shaw, 1800) [verified speciesKey 2440301, genusKey 2440300]",
+      "requires_api_key": false,
+      "auth": "none",
+      "created_at": 1794983400,
+      "updated_at": 1794983400
+    },
+    {
+      "id": "ncbi-vombatus-ursinus",
+      "url": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/29139/",
+      "kind": "taxonomy_molecular",
+      "title": "NCBI Taxonomy — Vombatus ursinus (TaxID 29139; genus Vombatus TaxID 29138)",
+      "requires_api_key": false,
+      "auth": "none",
+      "created_at": 1794983400,
+      "updated_at": 1794983400
+    },
+    {
+      "id": "nsw-npws-bare-nosed-wombat",
+      "url": "https://www.nationalparks.nsw.gov.au/plants-and-animals/bare-nosed-wombat",
+      "kind": "regional_profile",
+      "title": "NSW NPWS — Bare-nosed Wombat profile (morphometrics, burrows up to 30 m, NSW distribution)",
+      "requires_api_key": false,
+      "auth": "none",
+      "created_at": 1794983400,
+      "updated_at": 1794983400
+    },
+    {
+      "id": "nsw-dpe-wombats",
+      "url": "https://www.environment.nsw.gov.au/topics/animals-and-plants/native-animals/native-animal-facts/land-mammals/wombats",
+      "kind": "regional_profile",
+      "title": "NSW DCCEEW / Environment — Native Animal Facts: Wombats",
+      "requires_api_key": false,
+      "auth": "none",
+      "created_at": 1794983400,
+      "updated_at": 1794983400
+    },
+    {
+      "id": "nsw-bionet",
+      "url": "https://www.environment.nsw.gov.au/topics/animals-and-plants/biodiversity/nsw-bionet",
+      "kind": "biodiversity_atlas",
+      "title": "NSW BioNet Atlas",
+      "requires_api_key": false,
+      "auth": "none",
+      "created_at": 1794983400,
+      "updated_at": 1794983400
+    },
+    {
+      "id": "vic-biodiversity-atlas",
+      "url": "https://vba.biodiversity.vic.gov.au/",
+      "kind": "biodiversity_atlas",
+      "title": "Victorian Biodiversity Atlas (DEECA) — Vombatus ursinus records",
+      "requires_api_key": false,
+      "auth": "none",
+      "created_at": 1794983400,
+      "updated_at": 1794983400
+    },
+    {
+      "id": "vic-wildlife-common-wombat",
+      "url": "https://www.wildlife.vic.gov.au/our-wildlife/mammals/common-wombat",
+      "kind": "regional_profile",
+      "title": "DEECA Wildlife Victoria — Common Wombat (Vombatus ursinus) profile & Wildlife Act 1975 protection",
+      "requires_api_key": false,
+      "auth": "none",
+      "created_at": 1794983400,
+      "updated_at": 1794983400
+    },
+    {
+      "id": "tern-ontology",
+      "url": "https://w3id.org/tern/ontologies/tern/",
+      "kind": "ontology",
+      "title": "TERN Ontology",
+      "requires_api_key": false,
+      "auth": "none",
+      "created_at": 1794983400,
+      "updated_at": 1794983400
+    },
+    {
+      "id": "local-contexts-tk-bc",
+      "url": "https://localcontexts.org/ontology/tk-bc.ttl#",
+      "kind": "biocultural_ontology",
+      "title": "Local Contexts Traditional Knowledge (TK) & Biocultural (BC) Labels Ontology",
+      "requires_api_key": false,
+      "auth": "none",
+      "created_at": 1794983400,
+      "updated_at": 1794983400
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "binary": {
+    "path": "C:\\github\\synth\\target-prod\\debug\\synth-mcp.exe",
+    "sha256": "e2d9c98fd81cd7910a099275153a262c196ec25f24c8f5995f863a72a22e8f46",
+    "version": "0.1.0"
+  },
+  "catalog": {
+    "count": 150,
+    "sha256": "a23d4087e6d3327695f24297a0cf0a71021c40aaa24f1293d5e84a9924358d36"
+  },
+  "execution_host": "synth.production",
+  "handle_lifetime": "one source evaluation; only encoded resources in this receipt are durable",
+  "hmc": {
+    "bytes": 3178572,
+    "path": "\\\\?\\C:\\github\\synth\\production\\intenteco-vurs-07b-r5.hmc",
+    "sha256": "eb25daf0b9d925177085fd4b8907b621be5b3af71009de21cda3dca479719d2c"
+  },
+  "inputs": [],
+  "limits": {
+    "accounting_scope": "per-revision logical component allowances; overlapping candidates and clones are not a process-peak or allocator bound",
+    "asset_work_units": 500000000,
+    "combined_logical_budget_bytes": 312475648,
+    "effective_asset_work_units": 498964468,
+    "effective_host_bytes": 235298432,
+    "evaluation_steps": 1035532,
+    "evaluation_workspace_bytes": 44040192,
+    "package_bytes": 335544320,
+    "resource_bytes": 67108864,
+    "source_available_bytes": 2097152,
+    "source_bytes": 258883,
+    "source_reservation_bytes": 33137024,
+    "source_reservation_kind": "conservative logical estimate, not an allocator bound",
+    "source_work_units": 1035532,
+    "standalone_wire_bytes": 4194304,
+    "total_resource_bytes": 268435456
+  },
+  "native_reviews": [],
+  "presentation_path": "\\\\?\\C:\\github\\synth\\production\\intenteco-vurs-07b-r5.html",
+  "producer": {
+    "id": "files",
+    "version": "2"
+  },
+  "quality_profile": "production16",
+  "requested_reviews": [
+    {
+      "path": "\\\\?\\C:\\github\\synth\\production\\intenteco-vurs-07b-r5-review-0",
+      "resource": "vombatus-ursinus.10d",
+      "status": "pending"
+    }
+  ],
+  "resources": [
+    {
+      "bytes": 91163,
+      "key": "blueprint.svg",
+      "kind": "svg",
+      "path": "\\\\?\\C:\\github\\synth\\production\\intenteco-vurs-07b-r5\\blueprint.svg",
+      "sha256": "12be3a8137d8858b7171cc3fedc10b53c290aceda2b897b0e3de993e9c94cbb8"
+    },
+    {
+      "bytes": 41082,
+      "key": "fur-colour.png",
+      "kind": "png",
+      "path": "\\\\?\\C:\\github\\synth\\production\\intenteco-vurs-07b-r5\\fur-colour.png",
+      "sha256": "f0208a973da697ffdd85d90fb6ef4fb4b476243ff5dffcd001c825e331a2b2be"
+    },
+    {
+      "bytes": 56663,
+      "key": "fur-normal.png",
+      "kind": "png",
+      "path": "\\\\?\\C:\\github\\synth\\production\\intenteco-vurs-07b-r5\\fur-normal.png",
+      "sha256": "0837c093bacdf498aede47e07b30b8160c167a1dad666817ac3f3691b36bc6a4"
+    },
+    {
+      "bytes": 17401,
+      "key": "fur-orm.png",
+      "kind": "png",
+      "path": "\\\\?\\C:\\github\\synth\\production\\intenteco-vurs-07b-r5\\fur-orm.png",
+      "sha256": "24177431bcf2d527fed74056a81c7aba98ac9de5bb7303066328bcdeaab8c133"
+    },
+    {
+      "bytes": 1503,
+      "key": "hair-bsdf.png",
+      "kind": "png",
+      "path": "\\\\?\\C:\\github\\synth\\production\\intenteco-vurs-07b-r5\\hair-bsdf.png",
+      "sha256": "7eed59222867a577fea58d4a0b1a0f98edfe5d9549c880b71ff5f8782a4b07d0"
+    },
+    {
+      "bytes": 311,
+      "key": "rig-packet.json",
+      "kind": "json",
+      "path": "\\\\?\\C:\\github\\synth\\production\\intenteco-vurs-07b-r5\\rig-packet.json",
+      "sha256": "6f249557d77cb704aef4132e2fd8bfc5fc903861187f6f1d25ef15242b3ba79a"
+    },
+    {
+      "bytes": 3199,
+      "key": "spectral-slice.png",
+      "kind": "png",
+      "path": "\\\\?\\C:\\github\\synth\\production\\intenteco-vurs-07b-r5\\spectral-slice.png",
+      "sha256": "852b88b9b02c569b18b9c0731ccf774f6eb4ff6c88564ace8493175cf2c68112"
+    },
+    {
+      "bytes": 33200,
+      "key": "turnaround.png",
+      "kind": "png",
+      "path": "\\\\?\\C:\\github\\synth\\production\\intenteco-vurs-07b-r5\\turnaround.png",
+      "sha256": "642fcc4ad8bd8de9a04c172a9c3d8900a69f5317ee5e544908666f8b6e8b6358"
+    },
+    {
+      "bytes": 937856,
+      "key": "vombatus-ursinus-call.qac",
+      "kind": "qac",
+      "path": "\\\\?\\C:\\github\\synth\\production\\intenteco-vurs-07b-r5\\vombatus-ursinus-call.qac",
+      "sha256": "e9c48f2b8fde55de3249588a2d76751952fac23922652fd241adf55cb9bc7486"
+    },
+    {
+      "bytes": 1053440,
+      "key": "vombatus-ursinus-field.emf",
+      "kind": "emf",
+      "path": "\\\\?\\C:\\github\\synth\\production\\intenteco-vurs-07b-r5\\vombatus-ursinus-field.emf",
+      "sha256": "4910673fc9877e62a756664eba1476a973d2572719e9e7f5387c6c3c557ee2e0"
+    },
+    {
+      "bytes": 266096,
+      "key": "vombatus-ursinus-pbr.10d",
+      "kind": "10d",
+      "path": "\\\\?\\C:\\github\\synth\\production\\intenteco-vurs-07b-r5\\vombatus-ursinus-pbr.10d",
+      "sha256": "cebffb60725afe84b5f2b434fdb7a5e9a10b7fff9acab490116282727f7a0afc"
+    },
+    {
+      "bytes": 413176,
+      "key": "vombatus-ursinus.10d",
+      "kind": "10d",
+      "path": "\\\\?\\C:\\github\\synth\\production\\intenteco-vurs-07b-r5\\vombatus-ursinus.10d",
+      "sha256": "e2082353c35b107a7cac79fd8938f44678965d8a27c8edd34e98fa869eda81d0"
+    }
+  ],
+  "review_status": "pending",
+  "schema": "synth.production-receipt/v1",
+  "source_sha256": "c39f2aa3ffed30ff46f9a0d69086b2f28299ffd5581b17cc828c4db8b8050eb1",
+  "strict_replay_verified": true,
+  "visual_acceptance": "pending inspection"
+}

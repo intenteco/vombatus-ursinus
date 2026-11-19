@@ -1,0 +1,11 @@
+# Synth local secrets, keys, and ephemeral scratch
+.synth/secrets.json
+.synth/secrets.*.json
+.synth/inbox/
+*.key
+*.pem
+*.hex
+.tmp/
+scratch/
+__pycache__/
+*.tmp

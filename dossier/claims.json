@@ -1,0 +1,4651 @@
+{
+  "document_kind": "claim_ledger",
+  "schema_version": "ecopunk-model-claims-v2",
+  "catalogue": {
+    "id": "ecopunk-model-deliverables",
+    "version": "2026-10-24.2",
+    "sha256": "c0cb76151bf5d0776afaae4d59d7427efb65633bf359d3f4c2bda83c361c91cb"
+  },
+  "subject": {
+    "entity_id": "urn:qualia:taxon:vombatus_ursinus",
+    "dossier_id": "intenteco/vombatus-ursinus/eco-wp-07b",
+    "families": [
+      "fauna"
+    ],
+    "source_revision": "eco-wp-07b-cad-hmc-v1",
+    "corpus_revision": "2026-11-18T07:02:00Z",
+    "requirements_baseline_ref": "C:\\github\\eco-intent\\devdocs\\se-australia-species-production-spec.md",
+    "package_content_refs": [
+      "ontology/taxon.ttl",
+      "ontology/index.ttl",
+      "dist/taxon.q42",
+      "dist/index.q42",
+      "source/vombatus-ursinus.vibe",
+      "source/actuation.vibe",
+      "dist/vombatus-ursinus.hmc",
+      "dist/vombatus-ursinus.10d",
+      "dist/vombatus-ursinus-pbr.10d",
+      "dist/vombatus-ursinus-field.emf",
+      "dist/vombatus-ursinus-call.qac",
+      "dist/rig-packet.json",
+      "dist/receipt.json",
+      "previews/front-view-assumed.png",
+      "previews/side-view-assumed.png",
+      "previews/three-quarter-view-assumed.png",
+      "previews/turnaround.png",
+      "previews/blueprint.svg",
+      "previews/spectral-slice.png",
+      "previews/review-receipt.json"
+    ],
+    "identifiers": [
+      {
+        "value": "urn:qualia:taxon:vombatus_ursinus",
+        "scheme": "qualia_taxon_urn",
+        "issuer_or_authority_ref": "IntentEco / QualiaDB",
+        "scope": "taxon_concept",
+        "source_ref": "ontology/taxon.ttl",
+        "association_status": "asserted",
+        "valid_from": "2026-11-18T06:37:00Z",
+        "valid_until": "",
+        "mapping_ref": "ontology/taxon.ttl#qualia:vombatus_ursinus"
+      },
+      {
+        "value": "did:q42:taxon:vombatus_ursinus",
+        "scheme": "did:q42",
+        "issuer_or_authority_ref": "Q42 Mathematical Locator Fabric",
+        "scope": "taxon_concept",
+        "source_ref": "ontology/taxon.ttl",
+        "association_status": "asserted",
+        "valid_from": "2026-11-18T06:37:00Z",
+        "valid_until": "",
+        "mapping_ref": "ontology/taxon.ttl#q42taxon:vombatus_ursinus"
+      },
+      {
+        "value": "https://biodiversity.org.au/afd/taxa/66d42847-c556-4fa3-902c-a91d9f517286",
+        "scheme": "AFD_LSID",
+        "issuer_or_authority_ref": "Australian Faunal Directory (DCCEEW / biodiversity.org.au)",
+        "scope": "taxon_concept",
+        "source_ref": "https://bie-ws.ala.org.au/ws/species/https://biodiversity.org.au/afd/taxa/66d42847-c556-4fa3-902c-a91d9f517286.json",
+        "association_status": "verified",
+        "valid_from": "2026-11-18T06:37:00Z",
+        "valid_until": "",
+        "mapping_ref": "ontology/taxon.ttl#src:afd-vombatus-ursinus"
+      },
+      {
+        "value": "GBIF:2440301",
+        "scheme": "GBIF_Backbone_SpeciesKey",
+        "issuer_or_authority_ref": "Global Biodiversity Information Facility (GBIF)",
+        "scope": "taxon_concept",
+        "source_ref": "https://api.gbif.org/v1/species/2440301",
+        "association_status": "verified",
+        "valid_from": "2026-11-18T06:37:00Z",
+        "valid_until": "",
+        "mapping_ref": "ontology/taxon.ttl#src:gbif-2440301"
+      },
+      {
+        "value": "NCBITaxon:29139",
+        "scheme": "NCBI_Taxonomy",
+        "issuer_or_authority_ref": "National Center for Biotechnology Information (NCBI)",
+        "scope": "taxon_concept",
+        "source_ref": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=taxonomy&id=29139&retmode=json",
+        "association_status": "verified",
+        "valid_from": "2026-11-18T06:37:00Z",
+        "valid_until": "",
+        "mapping_ref": "ontology/taxon.ttl#src:ncbi-29139"
+      }
+    ],
+    "identifier_mapping_refs": []
+  },
+  "reported_status": "incomplete",
+  "profiles": [
+    {
+      "id": "film",
+      "style": "Photorealistic fossorial marsupial anatomical & natural-history film fidelity",
+      "delivery_target": "Offline high-detail render / FilmCraft handoff (ECO-WP-07B pending)",
+      "criteria_ref": "C:\\github\\eco-intent\\devdocs\\se-australia-species-production-spec.md",
+      "status": "unassessed",
+      "representation_refs": []
+    },
+    {
+      "id": "open_world_game",
+      "style": "Real-time 3-layer PBR + 24-joint fossorial rig + InstanceState64 habitat LODs",
+      "delivery_target": "Real-time Etalon/Synth native runtime (ECO-WP-07B pending)",
+      "criteria_ref": "C:\\github\\eco-intent\\devdocs\\se-australia-species-production-spec.md",
+      "status": "unassessed",
+      "representation_refs": []
+    },
+    {
+      "id": "cartoon",
+      "style": "Expressive stylized silhouette preserving broad flattened cranium, bare granular rhinarium, rounded ears, spade claws & armored rump",
+      "delivery_target": "Realtime/film stylized target (ECO-WP-07B pending)",
+      "criteria_ref": "C:\\github\\eco-intent\\devdocs\\se-australia-species-production-spec.md",
+      "status": "unassessed",
+      "representation_refs": []
+    }
+  ],
+  "inventories": {
+    "admission_negative_case": [],
+    "animal_behaviour": [
+      {
+        "id": "bhv_burrow_excavation",
+        "description": "Fossorial excavation of 15-30 m burrow networks using alternating triceps/pectoralis/latissimus forelimb strokes and hind-pes soil bulldozing",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#qualia:vombatus_ursinus"
+      },
+      {
+        "id": "bhv_rump_burrow_defense",
+        "description": "Wedging thickened fibrocartilaginous pelvic_dermal_shield upward against burrow ceiling to crush intruding predators",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#anat:pelvic_dermal_shield"
+      },
+      {
+        "id": "bhv_cubic_scat_latrine",
+        "description": "Nocturnal grazing and territorial cubic-scat deposition on elevated flat rocks and logs",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#anat:distal_colon_cubic_scat"
+      }
+    ],
+    "animal_interaction": [
+      {
+        "id": "int_burrow_refuge_engineering",
+        "description": "Allogenic ecosystem engineering providing 15-30 m thermal and bushfire refugia for co-occurring SE Australian wildlife",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#qualia:vombatus_ursinus"
+      }
+    ],
+    "animal_process": [
+      {
+        "id": "proc_hypselodont_eruption",
+        "description": "Continuous rootless tooth growth compensating for silica wear from native tussock grasses and roots",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#anat:hypselodont_dentition"
+      },
+      {
+        "id": "proc_distal_colon_cubing",
+        "description": "8-14 day digesta dehydration and alternating circumferential distal-colon stiffness producing 20-30 mm cubic scats",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#anat:distal_colon_cubic_scat"
+      }
+    ],
+    "animal_relation": [
+      {
+        "id": "rel_graze_poa_themeda",
+        "description": "ro:0002470 grazing on Poa sieberiana, Themeda triandra, Carex appressa, and Lomandra longifolia",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#qualia:vombatus_ursinus"
+      },
+      {
+        "id": "rel_habitat_se_aus",
+        "description": "ro:0002303 terrestrial subterranean burrow & forest-grassland ecotone (0-1850 m)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#qualia:vombatus_ursinus"
+      }
+    ],
+    "animal_state": [
+      {
+        "id": "state_healthy_burrowing",
+        "description": "Normal fossorial/grazing state within q42:rom:* joint bounds (shoulder, elbow, wrist, hip, knee, ankle, spine, neck)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#rom:shoulder"
+      },
+      {
+        "id": "state_injury_guarding",
+        "description": "Post-injury guarding (obligateForelimbDiggingUnload, obligateInjuredAsymmetricAmbleGait, obligateBurrowShelterRetreat)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#rom:elbow"
+      }
+    ],
+    "attachment": [],
+    "avatar_action": [],
+    "avatar_behaviour": [],
+    "avatar_expression": [],
+    "avatar_variant": [],
+    "behaviour": [
+      {
+        "id": "bhv_actuation_ethogram",
+        "description": "InstanceState64 ontogenetic stages, rotary scratch-digging power model, waddle walk, burrow rump-block defense, and thermal/acoustic aura hooks",
+        "source_ref": "source/actuation.vibe",
+        "compatibility_ref": "ontology/taxon.ttl#inst64:vombatus_ursinus_layout"
+      }
+    ],
+    "behaviour_case": [],
+    "clip": [],
+    "compatible_variant": [],
+    "component": [
+      {
+        "id": "comp_osteology",
+        "description": "Layer 0 osteology (UBERON:0001434) \u2014 flattened cranium, flared zygomatic arches, hypselodont teeth, flared deltopectoral humerus crest, 24-joint rig",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#anat:skeletal_system"
+      },
+      {
+        "id": "comp_myology",
+        "description": "Layer 1 myology (UBERON:0001630) \u2014 triceps brachii, pectoralis, latissimus dorsi, masseter/temporalis, epaxial/gluteal",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#anat:muscular_system"
+      },
+      {
+        "id": "comp_integument",
+        "description": "Layer 2 integument (UBERON:0002416) \u2014 coarse grizzled pelage, bare granular rhinarium, small rounded ears, backward marsupium",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#anat:coarse_pelage"
+      },
+      {
+        "id": "comp_pelvic_dermal_shield",
+        "description": "Thickened 10-15 mm fibrocartilaginous/dermal rump shield (pelvic_dermal_shield) over sacrum and ilium",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#anat:pelvic_dermal_shield"
+      },
+      {
+        "id": "comp_distal_colon",
+        "description": "Specialized distal colon biomechanics (UBERON:0001155) producing cubic scat",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#anat:distal_colon_cubic_scat"
+      },
+      {
+        "id": "comp_forepaws_hindpes",
+        "description": "Plantigrade 5-digit forepaws with spade claws (UBERON:0002398) and syndactylous II-III hind feet (UBERON:0002387)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#anat:plantigrade_forepaws"
+      }
+    ],
+    "contact_case": [],
+    "conversion": [],
+    "corrective": [],
+    "damage_transition": [],
+    "device_profile": [],
+    "environment_case": [],
+    "environment_layer": [],
+    "environment_process": [],
+    "environment_scenario": [],
+    "environment_transition": [],
+    "failure_mode": [],
+    "film_action": [],
+    "film_shot": [],
+    "film_simulation": [],
+    "game_interaction": [],
+    "graph_partition": [
+      {
+        "id": "part_taxon_q42",
+        "description": "Sealed NQuin taxonomic, anatomical, ROM, InstanceState64 & Country graph (573 quins)",
+        "source_ref": "dist/taxon.q42",
+        "compatibility_ref": "ontology/taxon.ttl"
+      },
+      {
+        "id": "part_index_q42",
+        "description": "Sealed NQuin DCAT dataset & distribution manifest (70 quins)",
+        "source_ref": "dist/index.q42",
+        "compatibility_ref": "ontology/index.ttl"
+      }
+    ],
+    "installation_case": [],
+    "interaction": [],
+    "life_stage": [
+      {
+        "id": "pouch_young",
+        "description": "InstanceState64 ontogenetic_age_norm 0.00-0.16 (0.0005-2.5 kg, backward pouch)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#stage:pouch_young"
+      },
+      {
+        "id": "juvenile_at_heel",
+        "description": "InstanceState64 ontogenetic_age_norm 0.16-0.36 (2.5-10.5 kg, learning grazing/burrowing)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#stage:juvenile_at_heel"
+      },
+      {
+        "id": "subadult",
+        "description": "InstanceState64 ontogenetic_age_norm 0.36-0.58 (10.5-21.5 kg, dispersal)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#stage:subadult"
+      },
+      {
+        "id": "adult_female",
+        "description": "InstanceState64 ontogenetic_age_norm 0.58-1.00 (22.0-34.0 kg, 2n=14 XX)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#stage:adult_female"
+      },
+      {
+        "id": "adult_male",
+        "description": "InstanceState64 ontogenetic_age_norm 0.58-1.00 (25.0-38.0 kg, 2n=14 XY)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#stage:adult_male"
+      }
+    ],
+    "lifecycle_transition": [],
+    "locomotor_mode": [
+      {
+        "id": "loco_plantigrade_amble",
+        "description": "Low-slung quadrupedal plantigrade walk (0.8-1.5 m/s)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#qualia:vombatus_ursinus"
+      },
+      {
+        "id": "loco_defensive_sprint",
+        "description": "Short-burst defensive gallop up to 11.1 m/s (~40 km/h)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#qualia:vombatus_ursinus"
+      },
+      {
+        "id": "loco_fossorial_excavation",
+        "description": "Alternating forelimb scrape and hind-pes soil bulldozing inside 15-30 m tunnels",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#qualia:vombatus_ursinus"
+      }
+    ],
+    "lod": [],
+    "lod_transition": [],
+    "made_process": [],
+    "made_scenario": [],
+    "material_map": [],
+    "mechanism": [],
+    "media_resource": [
+      {
+        "id": "res_hmc",
+        "description": "dist/vombatus-ursinus.hmc (3178572 B, sha256 eb25daf0b9d925177085fd4b8907b621be5b3af71009de21cda3dca479719d2c)",
+        "source_ref": "dist/vombatus-ursinus.hmc",
+        "compatibility_ref": "dist/receipt.json"
+      },
+      {
+        "id": "res_10d",
+        "description": "dist/vombatus-ursinus.10d (413176 B, 27799 triangles, 14162 vertices, sha256 e2082353c35b107a7cac79fd8938f44678965d8a27c8edd34e98fa869eda81d0)",
+        "source_ref": "dist/vombatus-ursinus.10d",
+        "compatibility_ref": "previews/review-receipt.json"
+      },
+      {
+        "id": "res_pbr_10d",
+        "description": "dist/vombatus-ursinus-pbr.10d (266096 B, sha256 cebffb60725afe84b5f2b434fdb7a5e9a10b7fff9acab490116282727f7a0afc)",
+        "source_ref": "dist/vombatus-ursinus-pbr.10d",
+        "compatibility_ref": "dist/receipt.json"
+      },
+      {
+        "id": "res_emf",
+        "description": "dist/vombatus-ursinus-field.emf (1053440 B, sha256 4910673fc9877e62a756664eba1476a973d2572719e9e7f5387c6c3c557ee2e0)",
+        "source_ref": "dist/vombatus-ursinus-field.emf",
+        "compatibility_ref": "previews/spectral-slice.png"
+      },
+      {
+        "id": "res_qac",
+        "description": "dist/vombatus-ursinus-call.qac (937856 B, sha256 e9c48f2b8fde55de3249588a2d76751952fac23922652fd241adf55cb9bc7486)",
+        "source_ref": "dist/vombatus-ursinus-call.qac",
+        "compatibility_ref": "dist/receipt.json"
+      }
+    ],
+    "micro_lifecycle": [],
+    "micro_process": [],
+    "micro_structure": [],
+    "movement": [],
+    "movement_scenario": [],
+    "movement_state": [],
+    "operating_mode": [],
+    "organ": [],
+    "payload_type": [],
+    "phenology": [],
+    "physical_component": [],
+    "physical_damage_case": [],
+    "physical_facet": [],
+    "physical_system": [],
+    "placement_rule": [],
+    "plant_damage": [],
+    "plant_motion": [],
+    "plant_process": [],
+    "plant_relation": [],
+    "port": [],
+    "profile": [
+      {
+        "id": "film",
+        "description": "Film delivery profile",
+        "source_ref": "",
+        "compatibility_ref": ""
+      },
+      {
+        "id": "open_world_game",
+        "description": "Open-world game delivery profile",
+        "source_ref": "",
+        "compatibility_ref": ""
+      },
+      {
+        "id": "cartoon",
+        "description": "Cartoon representation with declared film/realtime delivery",
+        "source_ref": "",
+        "compatibility_ref": ""
+      }
+    ],
+    "qualification_case": [],
+    "qualification_run": [],
+    "query_case": [
+      {
+        "id": "sparql_taxon_full",
+        "description": "query_sparql on dist/taxon.q42 returning 573 bindings",
+        "source_ref": "dist/taxon.q42",
+        "compatibility_ref": "ontology/taxon.ttl"
+      },
+      {
+        "id": "sparql_index_full",
+        "description": "query_sparql on dist/index.q42 returning 70 bindings",
+        "source_ref": "dist/index.q42",
+        "compatibility_ref": "ontology/index.ttl"
+      }
+    ],
+    "relation_family": [
+      {
+        "id": "relfam_uberon_partonomy",
+        "description": "ro:0002131 anatomical partonomy linking UBERON osteology, myology, integument, pelvic_dermal_shield & colon",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl"
+      },
+      {
+        "id": "relfam_trophic_country",
+        "description": "ro:0002470 grazing & tk:custodial_country SE Australia Country provenance",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl"
+      }
+    ],
+    "render_feature": [],
+    "representation": [],
+    "resource_process": [],
+    "review_domain": [],
+    "rig": [
+      {
+        "id": "rig_vombatid_fossorial_24j",
+        "description": "24-joint PGA vombatid_fossorial rig + 4 two-bone IK grounded paw contacts + NLA channelbag (waddle, scratch-digging, rump-block, mastication)",
+        "source_ref": "source/vombatus-ursinus.vibe",
+        "compatibility_ref": "dist/rig-packet.json"
+      }
+    ],
+    "rig_compatibility": [],
+    "rig_feature": [],
+    "scientific_model": [],
+    "scientific_scale": [],
+    "secondary_system": [],
+    "section_view": [],
+    "sound": [
+      {
+        "id": "snd_defensive_grunt_hiss",
+        "description": "Low raspy defensive grunt/hiss (112 Hz fundamental + 340 Hz rasp harmonic, 110-420 Hz bandpass) encoded to .qac v1",
+        "source_ref": "source/vombatus-ursinus.vibe",
+        "compatibility_ref": "dist/vombatus-ursinus-call.qac"
+      }
+    ],
+    "sound_event": [],
+    "source": [
+      {
+        "id": "src_afd",
+        "description": "Australian Faunal Directory (AFD) LSID 66d42847-c556-4fa3-902c-a91d9f517286",
+        "source_ref": "https://biodiversity.org.au/afd/taxa/66d42847-c556-4fa3-902c-a91d9f517286",
+        "compatibility_ref": "ontology/taxon.ttl#src:afd-vombatus-ursinus"
+      },
+      {
+        "id": "src_ala",
+        "description": "Atlas of Living Australia (ALA) BIE species profile",
+        "source_ref": "https://bie.ala.org.au/species/https://biodiversity.org.au/afd/taxa/66d42847-c556-4fa3-902c-a91d9f517286",
+        "compatibility_ref": "ontology/taxon.ttl#src:ala-vombatus-ursinus"
+      },
+      {
+        "id": "src_gbif",
+        "description": "GBIF Backbone speciesKey 2440301",
+        "source_ref": "https://www.gbif.org/species/2440301",
+        "compatibility_ref": "ontology/taxon.ttl#src:gbif-2440301"
+      },
+      {
+        "id": "src_ncbi",
+        "description": "NCBI Taxonomy ID 29139",
+        "source_ref": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/29139/",
+        "compatibility_ref": "ontology/taxon.ttl#src:ncbi-29139"
+      },
+      {
+        "id": "src_nsw_npws",
+        "description": "NSW NPWS Bare-nosed Wombat profile",
+        "source_ref": "https://www.nationalparks.nsw.gov.au/plants-and-animals/bare-nosed-wombat",
+        "compatibility_ref": "ontology/taxon.ttl#src:nsw-npws-bare-nosed-wombat"
+      },
+      {
+        "id": "src_vic_vba",
+        "description": "Victorian Biodiversity Atlas (DEECA)",
+        "source_ref": "https://vba.biodiversity.vic.gov.au/",
+        "compatibility_ref": "ontology/taxon.ttl#src:vic-biodiversity-atlas"
+      }
+    ],
+    "stimulus_response": [],
+    "surface": [
+      {
+        "id": "surf_chiang_hair_grizzled",
+        "description": "Chiang hair BSDF (roughness 0.48, IOR 1.55) + 256x256 procedural grizzled guard-hair PBR maps (colour, normal, orm) + 3-tone countershaded pelage",
+        "source_ref": "source/vombatus-ursinus.vibe",
+        "compatibility_ref": "dist/vombatus-ursinus-pbr.10d"
+      }
+    ],
+    "surface_state": [],
+    "toon_action": [],
+    "toon_render_case": [],
+    "toon_rig_feature": [],
+    "toon_target": [],
+    "trait": [
+      {
+        "id": "trait_morphometrics",
+        "description": "Head-body 0.85-1.15 m, shoulder height 0.35-0.45 m, adult mass 22.0-38.0 kg",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#qualia:vombatus_ursinus"
+      },
+      {
+        "id": "trait_bmr",
+        "description": "Hypometabolic fossorial marsupial BMR 32.0 W (Tb 34.8 C)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#qualia:vombatus_ursinus"
+      },
+      {
+        "id": "trait_rump_shield",
+        "description": "10-15 mm thickened fibrocartilaginous/dermal pelvic_dermal_shield",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#anat:pelvic_dermal_shield"
+      },
+      {
+        "id": "trait_cubic_scat",
+        "description": "Distal colon differential stiffness producing 20-30 mm cubic scats",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#anat:distal_colon_cubic_scat"
+      }
+    ],
+    "transition": [],
+    "twin_model": [],
+    "variant": [
+      {
+        "id": "var_grizzle_melanin",
+        "description": "InstanceState64 pelage_grizzle_melanin across sandy-brown to charcoal-grey pelage",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#inst64:vombatus_ursinus_layout"
+      },
+      {
+        "id": "var_mange_stress",
+        "description": "InstanceState64 mange_stress_01 sarcoptic mange vulnerability parameter",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#inst64:vombatus_ursinus_layout"
+      }
+    ],
+    "work_procedure": [],
+    "world_case": [],
+    "subject_identifier": [
+      {
+        "id": "id_qualia",
+        "description": "urn:qualia:taxon:vombatus_ursinus",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#qualia:vombatus_ursinus"
+      },
+      {
+        "id": "id_q42_did",
+        "description": "did:q42:taxon:vombatus_ursinus",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#q42taxon:vombatus_ursinus"
+      },
+      {
+        "id": "id_afd",
+        "description": "AFD LSID 66d42847-c556-4fa3-902c-a91d9f517286",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#src:afd-vombatus-ursinus"
+      },
+      {
+        "id": "id_gbif",
+        "description": "GBIF:2440301",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#src:gbif-2440301"
+      },
+      {
+        "id": "id_ncbi",
+        "description": "NCBITaxon:29139",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/taxon.ttl#src:ncbi-29139"
+      }
+    ],
+    "identifier_mapping": []
+  },
+  "claims": [
+    {
+      "deliverable_id": "ID-01",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Core identifier/knowledge deliverable for Vombatus ursinus (ECO-WP-07A).",
+        "applicability_authority_ref": "",
+        "claim_status": "partial",
+        "claim": "Recorded taxon identifiers (urn:qualia:taxon:vombatus_ursinus, did:q42:taxon:vombatus_ursinus, AFD LSID 66d42847-c556-4fa3-902c-a91d9f517286, GBIF:2440301, NCBITaxon:29139); specimen/depiction instances pending ECO-WP-07B.",
+        "claimant": "zoological-cad-producer (ECO-WP-07B)",
+        "evaluated_at": "2026-11-18T07:02:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "ontology/index.ttl",
+          "dist/taxon.q42",
+          "dist/index.q42",
+          "source/vombatus-ursinus.vibe",
+          "source/actuation.vibe",
+          "dist/vombatus-ursinus.hmc",
+          "dist/receipt.json"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl",
+          "ev-index-ttl",
+          "ev-taxon-q42-compile-sparql",
+          "ev-index-q42-compile-sparql",
+          "ev-cad-vibe-source",
+          "ev-actuation-vibe-check",
+          "ev-hmc-production",
+          "ev-native-10d-preview"
+        ],
+        "review_refs": [
+          "rev-domain-pending",
+          "rev-visual-pending"
+        ],
+        "blocked_by": [
+          "ECO-WP-GATE"
+        ],
+        "remaining_work": "ECO-WP-07B CAD/.hmc/rig/spectral/acoustic artifacts produced and visually inspected; awaiting ECO-WP-GATE human domain, visual, and rights sign-off."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "ID-02",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Core identifier/knowledge deliverable for Vombatus ursinus (ECO-WP-07A).",
+        "applicability_authority_ref": "",
+        "claim_status": "partial",
+        "claim": "Separated taxon concept, InstanceState64 organism template, regional references, and DCAT package distributions in taxon.ttl and index.ttl; CAD/HMC release mappings pending ECO-WP-07B.",
+        "claimant": "zoological-cad-producer (ECO-WP-07B)",
+        "evaluated_at": "2026-11-18T07:02:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "ontology/index.ttl",
+          "dist/taxon.q42",
+          "dist/index.q42",
+          "source/vombatus-ursinus.vibe",
+          "source/actuation.vibe",
+          "dist/vombatus-ursinus.hmc",
+          "dist/receipt.json"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl",
+          "ev-index-ttl",
+          "ev-taxon-q42-compile-sparql",
+          "ev-index-q42-compile-sparql",
+          "ev-cad-vibe-source",
+          "ev-actuation-vibe-check",
+          "ev-hmc-production",
+          "ev-native-10d-preview"
+        ],
+        "review_refs": [
+          "rev-domain-pending",
+          "rev-visual-pending"
+        ],
+        "blocked_by": [
+          "ECO-WP-GATE"
+        ],
+        "remaining_work": "ECO-WP-07B CAD/.hmc/rig/spectral/acoustic artifacts produced and visually inspected; awaiting ECO-WP-GATE human domain, visual, and rights sign-off."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "ID-03",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Core identifier/knowledge deliverable for Vombatus ursinus (ECO-WP-07A).",
+        "applicability_authority_ref": "",
+        "claim_status": "partial",
+        "claim": "Enumerated fossorial osteology (UBERON:0001434), digging myology (UBERON:0001630), integument (UBERON:0002416), backward pouch, pelvic_dermal_shield, and distal colon subsystems; 3D mesh/part bindings pending ECO-WP-07B.",
+        "claimant": "zoological-cad-producer (ECO-WP-07B)",
+        "evaluated_at": "2026-11-18T07:02:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "ontology/index.ttl",
+          "dist/taxon.q42",
+          "dist/index.q42",
+          "source/vombatus-ursinus.vibe",
+          "source/actuation.vibe",
+          "dist/vombatus-ursinus.hmc",
+          "dist/receipt.json"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl",
+          "ev-index-ttl",
+          "ev-taxon-q42-compile-sparql",
+          "ev-index-q42-compile-sparql",
+          "ev-cad-vibe-source",
+          "ev-actuation-vibe-check",
+          "ev-hmc-production",
+          "ev-native-10d-preview"
+        ],
+        "review_refs": [
+          "rev-domain-pending",
+          "rev-visual-pending"
+        ],
+        "blocked_by": [
+          "ECO-WP-GATE"
+        ],
+        "remaining_work": "ECO-WP-07B CAD/.hmc/rig/spectral/acoustic artifacts produced and visually inspected; awaiting ECO-WP-GATE human domain, visual, and rights sign-off."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "ID-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "ID-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "ID-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "ID-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "ID-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "KN-01",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Core identifier/knowledge deliverable for Vombatus ursinus (ECO-WP-07A).",
+        "applicability_authority_ref": "",
+        "claim_status": "partial",
+        "claim": "Inventoried AFD, ALA, GBIF, NCBI, NSW NPWS, NSW Environment, NSW BioNet, and Victorian Biodiversity Atlas (DEECA) references in .synth/bookmarks.json and taxon.ttl.",
+        "claimant": "zoological-cad-producer (ECO-WP-07B)",
+        "evaluated_at": "2026-11-18T07:02:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "ontology/index.ttl",
+          "dist/taxon.q42",
+          "dist/index.q42",
+          "source/vombatus-ursinus.vibe",
+          "source/actuation.vibe",
+          "dist/vombatus-ursinus.hmc",
+          "dist/receipt.json"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl",
+          "ev-index-ttl",
+          "ev-taxon-q42-compile-sparql",
+          "ev-index-q42-compile-sparql",
+          "ev-cad-vibe-source",
+          "ev-actuation-vibe-check",
+          "ev-hmc-production",
+          "ev-native-10d-preview"
+        ],
+        "review_refs": [
+          "rev-domain-pending",
+          "rev-visual-pending"
+        ],
+        "blocked_by": [
+          "ECO-WP-GATE"
+        ],
+        "remaining_work": "ECO-WP-07B CAD/.hmc/rig/spectral/acoustic artifacts produced and visually inspected; awaiting ECO-WP-GATE human domain, visual, and rights sign-off."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "KN-02",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Core identifier/knowledge deliverable for Vombatus ursinus (ECO-WP-07A).",
+        "applicability_authority_ref": "",
+        "claim_status": "partial",
+        "claim": "Verified Vombatus ursinus (Shaw, 1800) across AFD, ALA, GBIF (2440301), and NCBI (29139), recording mainland/Tasmanian/Bass Strait subspecies; domain review pending.",
+        "claimant": "zoological-cad-producer (ECO-WP-07B)",
+        "evaluated_at": "2026-11-18T07:02:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "ontology/index.ttl",
+          "dist/taxon.q42",
+          "dist/index.q42",
+          "source/vombatus-ursinus.vibe",
+          "source/actuation.vibe",
+          "dist/vombatus-ursinus.hmc",
+          "dist/receipt.json"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl",
+          "ev-index-ttl",
+          "ev-taxon-q42-compile-sparql",
+          "ev-index-q42-compile-sparql",
+          "ev-cad-vibe-source",
+          "ev-actuation-vibe-check",
+          "ev-hmc-production",
+          "ev-native-10d-preview"
+        ],
+        "review_refs": [
+          "rev-domain-pending",
+          "rev-visual-pending"
+        ],
+        "blocked_by": [
+          "ECO-WP-GATE"
+        ],
+        "remaining_work": "ECO-WP-07B CAD/.hmc/rig/spectral/acoustic artifacts produced and visually inspected; awaiting ECO-WP-GATE human domain, visual, and rights sign-off."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "KN-03",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Core identifier/knowledge deliverable for Vombatus ursinus (ECO-WP-07A).",
+        "applicability_authority_ref": "",
+        "claim_status": "partial",
+        "claim": "Compiled ontology/taxon.ttl (573 quins) and ontology/index.ttl (70 quins) into dist/taxon.q42 and dist/index.q42; HMC runtime partition reconciliation pending ECO-WP-07B.",
+        "claimant": "zoological-cad-producer (ECO-WP-07B)",
+        "evaluated_at": "2026-11-18T07:02:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "ontology/index.ttl",
+          "dist/taxon.q42",
+          "dist/index.q42",
+          "source/vombatus-ursinus.vibe",
+          "source/actuation.vibe",
+          "dist/vombatus-ursinus.hmc",
+          "dist/receipt.json"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl",
+          "ev-index-ttl",
+          "ev-taxon-q42-compile-sparql",
+          "ev-index-q42-compile-sparql",
+          "ev-cad-vibe-source",
+          "ev-actuation-vibe-check",
+          "ev-hmc-production",
+          "ev-native-10d-preview"
+        ],
+        "review_refs": [
+          "rev-domain-pending",
+          "rev-visual-pending"
+        ],
+        "blocked_by": [
+          "ECO-WP-GATE"
+        ],
+        "remaining_work": "ECO-WP-07B CAD/.hmc/rig/spectral/acoustic artifacts produced and visually inspected; awaiting ECO-WP-GATE human domain, visual, and rights sign-off."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "KN-04",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Core identifier/knowledge deliverable for Vombatus ursinus (ECO-WP-07A).",
+        "applicability_authority_ref": "",
+        "claim_status": "partial",
+        "claim": "Packed Darwin Core, UBERON, RO, ENVO, TK/BC, and Q42 predicates into offline-queryable .q42 volumes; SHACL shapes validation pending.",
+        "claimant": "zoological-cad-producer (ECO-WP-07B)",
+        "evaluated_at": "2026-11-18T07:02:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "ontology/index.ttl",
+          "dist/taxon.q42",
+          "dist/index.q42",
+          "source/vombatus-ursinus.vibe",
+          "source/actuation.vibe",
+          "dist/vombatus-ursinus.hmc",
+          "dist/receipt.json"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl",
+          "ev-index-ttl",
+          "ev-taxon-q42-compile-sparql",
+          "ev-index-q42-compile-sparql",
+          "ev-cad-vibe-source",
+          "ev-actuation-vibe-check",
+          "ev-hmc-production",
+          "ev-native-10d-preview"
+        ],
+        "review_refs": [
+          "rev-domain-pending",
+          "rev-visual-pending"
+        ],
+        "blocked_by": [
+          "ECO-WP-GATE"
+        ],
+        "remaining_work": "ECO-WP-07B CAD/.hmc/rig/spectral/acoustic artifacts produced and visually inspected; awaiting ECO-WP-GATE human domain, visual, and rights sign-off."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "KN-05",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Core identifier/knowledge deliverable for Vombatus ursinus (ECO-WP-07A).",
+        "applicability_authority_ref": "",
+        "claim_status": "partial",
+        "claim": "Stored typed morphometrics (0.85-1.15 m, 0.35-0.45 m shoulder, 22-38 kg), 32.0 W BMR, allometric scaling equations, 15-30 m burrow mechanics, and 8 joint ROM bounds (rad) in taxon.ttl.",
+        "claimant": "zoological-cad-producer (ECO-WP-07B)",
+        "evaluated_at": "2026-11-18T07:02:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "ontology/index.ttl",
+          "dist/taxon.q42",
+          "dist/index.q42",
+          "source/vombatus-ursinus.vibe",
+          "source/actuation.vibe",
+          "dist/vombatus-ursinus.hmc",
+          "dist/receipt.json"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl",
+          "ev-index-ttl",
+          "ev-taxon-q42-compile-sparql",
+          "ev-index-q42-compile-sparql",
+          "ev-cad-vibe-source",
+          "ev-actuation-vibe-check",
+          "ev-hmc-production",
+          "ev-native-10d-preview"
+        ],
+        "review_refs": [
+          "rev-domain-pending",
+          "rev-visual-pending"
+        ],
+        "blocked_by": [
+          "ECO-WP-GATE"
+        ],
+        "remaining_work": "ECO-WP-07B CAD/.hmc/rig/spectral/acoustic artifacts produced and visually inspected; awaiting ECO-WP-GATE human domain, visual, and rights sign-off."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "KN-06",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Core identifier/knowledge deliverable for Vombatus ursinus (ECO-WP-07A).",
+        "applicability_authority_ref": "",
+        "claim_status": "partial",
+        "claim": "Bound anatomical subsystem IDs to UBERON CURIEs (including flared deltopectoral humerus crest, hypselodont teeth, pelvic_dermal_shield, distal_colon_cubic_scat) in taxon.ttl and index.ttl; CAD mesh bindings pending ECO-WP-07B.",
+        "claimant": "zoological-cad-producer (ECO-WP-07B)",
+        "evaluated_at": "2026-11-18T07:02:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "ontology/index.ttl",
+          "dist/taxon.q42",
+          "dist/index.q42",
+          "source/vombatus-ursinus.vibe",
+          "source/actuation.vibe",
+          "dist/vombatus-ursinus.hmc",
+          "dist/receipt.json"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl",
+          "ev-index-ttl",
+          "ev-taxon-q42-compile-sparql",
+          "ev-index-q42-compile-sparql",
+          "ev-cad-vibe-source",
+          "ev-actuation-vibe-check",
+          "ev-hmc-production",
+          "ev-native-10d-preview"
+        ],
+        "review_refs": [
+          "rev-domain-pending",
+          "rev-visual-pending"
+        ],
+        "blocked_by": [
+          "ECO-WP-GATE"
+        ],
+        "remaining_work": "ECO-WP-07B CAD/.hmc/rig/spectral/acoustic artifacts produced and visually inspected; awaiting ECO-WP-GATE human domain, visual, and rights sign-off."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "KN-07",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Core identifier/knowledge deliverable for Vombatus ursinus (ECO-WP-07A).",
+        "applicability_authority_ref": "",
+        "claim_status": "partial",
+        "claim": "Preserved NSW NPWS and Victorian Biodiversity Atlas regional context without asserting universal microsite occupancy.",
+        "claimant": "zoological-cad-producer (ECO-WP-07B)",
+        "evaluated_at": "2026-11-18T07:02:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "ontology/index.ttl",
+          "dist/taxon.q42",
+          "dist/index.q42",
+          "source/vombatus-ursinus.vibe",
+          "source/actuation.vibe",
+          "dist/vombatus-ursinus.hmc",
+          "dist/receipt.json"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl",
+          "ev-index-ttl",
+          "ev-taxon-q42-compile-sparql",
+          "ev-index-q42-compile-sparql",
+          "ev-cad-vibe-source",
+          "ev-actuation-vibe-check",
+          "ev-hmc-production",
+          "ev-native-10d-preview"
+        ],
+        "review_refs": [
+          "rev-domain-pending",
+          "rev-visual-pending"
+        ],
+        "blocked_by": [
+          "ECO-WP-GATE"
+        ],
+        "remaining_work": "ECO-WP-07B CAD/.hmc/rig/spectral/acoustic artifacts produced and visually inspected; awaiting ECO-WP-GATE human domain, visual, and rights sign-off."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "KN-08",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Core identifier/knowledge deliverable for Vombatus ursinus (ECO-WP-07A).",
+        "applicability_authority_ref": "",
+        "claim_status": "partial",
+        "claim": "Encoded grazing ecology (Poa sieberiana, Themeda triandra, Carex appressa, Lomandra longifolia) and 15-30 m burrow ecosystem engineering via RO relations in taxon.ttl.",
+        "claimant": "zoological-cad-producer (ECO-WP-07B)",
+        "evaluated_at": "2026-11-18T07:02:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "ontology/index.ttl",
+          "dist/taxon.q42",
+          "dist/index.q42",
+          "source/vombatus-ursinus.vibe",
+          "source/actuation.vibe",
+          "dist/vombatus-ursinus.hmc",
+          "dist/receipt.json"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl",
+          "ev-index-ttl",
+          "ev-taxon-q42-compile-sparql",
+          "ev-index-q42-compile-sparql",
+          "ev-cad-vibe-source",
+          "ev-actuation-vibe-check",
+          "ev-hmc-production",
+          "ev-native-10d-preview"
+        ],
+        "review_refs": [
+          "rev-domain-pending",
+          "rev-visual-pending"
+        ],
+        "blocked_by": [
+          "ECO-WP-GATE"
+        ],
+        "remaining_work": "ECO-WP-07B CAD/.hmc/rig/spectral/acoustic artifacts produced and visually inspected; awaiting ECO-WP-GATE human domain, visual, and rights sign-off."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "KN-09",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Core identifier/knowledge deliverable for Vombatus ursinus (ECO-WP-07A).",
+        "applicability_authority_ref": "",
+        "claim_status": "partial",
+        "claim": "Encoded backward-pouch lactation, fossorial excavation mechanics, burrow defense rump-shield wedging, and gait speeds in taxon.ttl.",
+        "claimant": "zoological-cad-producer (ECO-WP-07B)",
+        "evaluated_at": "2026-11-18T07:02:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "ontology/index.ttl",
+          "dist/taxon.q42",
+          "dist/index.q42",
+          "source/vombatus-ursinus.vibe",
+          "source/actuation.vibe",
+          "dist/vombatus-ursinus.hmc",
+          "dist/receipt.json"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl",
+          "ev-index-ttl",
+          "ev-taxon-q42-compile-sparql",
+          "ev-index-q42-compile-sparql",
+          "ev-cad-vibe-source",
+          "ev-actuation-vibe-check",
+          "ev-hmc-production",
+          "ev-native-10d-preview"
+        ],
+        "review_refs": [
+          "rev-domain-pending",
+          "rev-visual-pending"
+        ],
+        "blocked_by": [
+          "ECO-WP-GATE"
+        ],
+        "remaining_work": "ECO-WP-07B CAD/.hmc/rig/spectral/acoustic artifacts produced and visually inspected; awaiting ECO-WP-GATE human domain, visual, and rights sign-off."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "KN-10",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Core identifier/knowledge deliverable for Vombatus ursinus (ECO-WP-07A).",
+        "applicability_authority_ref": "",
+        "claim_status": "partial",
+        "claim": "Declared Social Permissive Commons (SPC) and 10 SE Australian Custodial Country nodes (Dharug/Gundungurra, Ngarigo, Walgalu, Yuin, Wiradjuri, GunaiKurnai, Wurundjeri, Boonwurrung, Taungurung) under TK/BC; formal rights review pending.",
+        "claimant": "zoological-cad-producer (ECO-WP-07B)",
+        "evaluated_at": "2026-11-18T07:02:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "ontology/index.ttl",
+          "dist/taxon.q42",
+          "dist/index.q42",
+          "source/vombatus-ursinus.vibe",
+          "source/actuation.vibe",
+          "dist/vombatus-ursinus.hmc",
+          "dist/receipt.json"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl",
+          "ev-index-ttl",
+          "ev-taxon-q42-compile-sparql",
+          "ev-index-q42-compile-sparql",
+          "ev-cad-vibe-source",
+          "ev-actuation-vibe-check",
+          "ev-hmc-production",
+          "ev-native-10d-preview"
+        ],
+        "review_refs": [
+          "rev-domain-pending",
+          "rev-visual-pending"
+        ],
+        "blocked_by": [
+          "ECO-WP-GATE"
+        ],
+        "remaining_work": "ECO-WP-07B CAD/.hmc/rig/spectral/acoustic artifacts produced and visually inspected; awaiting ECO-WP-GATE human domain, visual, and rights sign-off."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "KN-11",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Core identifier/knowledge deliverable for Vombatus ursinus (ECO-WP-07A).",
+        "applicability_authority_ref": "",
+        "claim_status": "partial",
+        "claim": "Distinguished regional authority profiles, literature parameter bounds, and InstanceState64 template variables in taxon.ttl and dossier/claims.json.",
+        "claimant": "zoological-cad-producer (ECO-WP-07B)",
+        "evaluated_at": "2026-11-18T07:02:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "ontology/index.ttl",
+          "dist/taxon.q42",
+          "dist/index.q42",
+          "source/vombatus-ursinus.vibe",
+          "source/actuation.vibe",
+          "dist/vombatus-ursinus.hmc",
+          "dist/receipt.json"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl",
+          "ev-index-ttl",
+          "ev-taxon-q42-compile-sparql",
+          "ev-index-q42-compile-sparql",
+          "ev-cad-vibe-source",
+          "ev-actuation-vibe-check",
+          "ev-hmc-production",
+          "ev-native-10d-preview"
+        ],
+        "review_refs": [
+          "rev-domain-pending",
+          "rev-visual-pending"
+        ],
+        "blocked_by": [
+          "ECO-WP-GATE"
+        ],
+        "remaining_work": "ECO-WP-07B CAD/.hmc/rig/spectral/acoustic artifacts produced and visually inspected; awaiting ECO-WP-GATE human domain, visual, and rights sign-off."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "KN-12",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Core identifier/knowledge deliverable for Vombatus ursinus (ECO-WP-07A).",
+        "applicability_authority_ref": "",
+        "claim_status": "partial",
+        "claim": "Executed offline query_sparql verification on dist/taxon.q42 (573 bindings) and dist/index.q42 (70 bindings).",
+        "claimant": "zoological-cad-producer (ECO-WP-07B)",
+        "evaluated_at": "2026-11-18T07:02:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "ontology/index.ttl",
+          "dist/taxon.q42",
+          "dist/index.q42",
+          "source/vombatus-ursinus.vibe",
+          "source/actuation.vibe",
+          "dist/vombatus-ursinus.hmc",
+          "dist/receipt.json"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl",
+          "ev-index-ttl",
+          "ev-taxon-q42-compile-sparql",
+          "ev-index-q42-compile-sparql",
+          "ev-cad-vibe-source",
+          "ev-actuation-vibe-check",
+          "ev-hmc-production",
+          "ev-native-10d-preview"
+        ],
+        "review_refs": [
+          "rev-domain-pending",
+          "rev-visual-pending"
+        ],
+        "blocked_by": [
+          "ECO-WP-GATE"
+        ],
+        "remaining_work": "ECO-WP-07B CAD/.hmc/rig/spectral/acoustic artifacts produced and visually inspected; awaiting ECO-WP-GATE human domain, visual, and rights sign-off."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "SRC-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "SRC-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "SRC-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "SRC-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "SRC-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "SRC-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "SRC-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "SRC-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GEO-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GEO-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GEO-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GEO-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GEO-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GEO-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GEO-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GEO-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GEO-09",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GEO-10",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MAT-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MAT-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MAT-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MAT-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MAT-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MAT-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MAT-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MAT-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MAT-09",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MAT-10",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FILM-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FILM-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FILM-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FILM-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FILM-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FILM-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FILM-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FILM-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FILM-09",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GAME-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GAME-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GAME-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GAME-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GAME-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GAME-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GAME-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GAME-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GAME-09",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GAME-10",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TOON-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TOON-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TOON-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TOON-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TOON-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TOON-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TOON-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TOON-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "RIG-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "RIG-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "RIG-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "RIG-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "RIG-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "RIG-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "RIG-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "RIG-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "RIG-09",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "RIG-10",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MOV-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MOV-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MOV-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MOV-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MOV-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MOV-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MOV-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MOV-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MOV-09",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MOV-10",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MOV-11",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MOV-12",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-09",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-10",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-11",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-12",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-13",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-14",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FLORA-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FLORA-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FLORA-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FLORA-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FLORA-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FLORA-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FLORA-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FLORA-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FAUNA-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FAUNA-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FAUNA-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FAUNA-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FAUNA-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FAUNA-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FAUNA-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FAUNA-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MADE-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MADE-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MADE-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MADE-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MADE-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MADE-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MADE-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MADE-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MADE-09",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MADE-10",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MADE-11",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MADE-12",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MICRO-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MICRO-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MICRO-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MICRO-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MICRO-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MICRO-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "ENV-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "ENV-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "ENV-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "ENV-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "ENV-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "ENV-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "HUM-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "HUM-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "HUM-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "HUM-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "HUM-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "HUM-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PHY-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PHY-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PHY-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PHY-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PHY-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PHY-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PHY-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PHY-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "AUD-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "AUD-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "AUD-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "AUD-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "AUD-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "AUD-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PKG-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PKG-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PKG-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PKG-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PKG-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PKG-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PKG-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PKG-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PKG-09",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PKG-10",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PKG-11",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PKG-12",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "QA-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "QA-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "QA-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "QA-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "QA-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "QA-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "QA-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "QA-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "QA-09",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "QA-10",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    }
+  ],
+  "evidence_index": [
+    {
+      "id": "ev-taxon-ttl",
+      "kind": "source_inspection",
+      "artifact_refs": [
+        "ontology/taxon.ttl"
+      ],
+      "input_refs": [
+        "https://biodiversity.org.au/afd/taxa/66d42847-c556-4fa3-902c-a91d9f517286",
+        "https://www.gbif.org/species/2440301",
+        "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/29139/",
+        "https://www.nationalparks.nsw.gov.au/plants-and-animals/bare-nosed-wombat",
+        "https://vba.biodiversity.vic.gov.au/"
+      ],
+      "method_ref": "W3C Turtle 1.1 authoring & biodiversity API verification",
+      "result": "Authored taxon.ttl with verified AFD/ALA/GBIF/NCBI identifiers, UBERON fossorial osteology/myology/integument/pelvic_dermal_shield/distal_colon subsystems, 8 joint ROM bounds, 5 InstanceState64 stages, grazing RO links, and 10 SE Australian Country nodes.",
+      "status": "passed",
+      "location": "C:\\github\\eco-intent\\vombatus-ursinus\\ontology\\taxon.ttl",
+      "content_sha256": "f4a71a65318fc74d6733abc258794bfe5295ad781fa07d19d9740d63d699ab23",
+      "issued_by": "species-ontology-researcher (ECO-WP-07A)",
+      "at": "2026-11-18T06:37:00Z",
+      "scope": "ECO-WP-07A ontology source"
+    },
+    {
+      "id": "ev-index-ttl",
+      "kind": "source_inspection",
+      "artifact_refs": [
+        "ontology/index.ttl"
+      ],
+      "input_refs": [
+        "ontology/taxon.ttl"
+      ],
+      "method_ref": "DCAT dataset & distribution manifest authoring",
+      "result": "Authored index.ttl linking taxon.ttl, compiled .q42 volumes, claims.json, and pending ECO-WP-07B CAD/HMC artifacts.",
+      "status": "passed",
+      "location": "C:\\github\\eco-intent\\vombatus-ursinus\\ontology\\index.ttl",
+      "content_sha256": "2a0d4f9d6c3987eef1e294e06b4d7247a24177ab31846ef04e63c7c35cdebeb4",
+      "issued_by": "species-ontology-researcher (ECO-WP-07A)",
+      "at": "2026-11-18T06:37:00Z",
+      "scope": "ECO-WP-07A DCAT manifest"
+    },
+    {
+      "id": "ev-taxon-q42-compile-sparql",
+      "kind": "build",
+      "artifact_refs": [
+        "dist/taxon.q42"
+      ],
+      "input_refs": [
+        "ontology/taxon.ttl"
+      ],
+      "method_ref": "mcp_synth_synth_compile_q42 + query_sparql(vault_path)",
+      "result": "Compiled intenteco-vurs-07a-taxon.q42 (573 quins, 554 lex terms) and verified 573 returned bindings via query_sparql.",
+      "status": "passed",
+      "location": "C:\\github\\eco-intent\\vombatus-ursinus\\dist\\taxon.q42",
+      "content_sha256": "d885c7be96215ec0b4457e445bdc21e80a8a9e9b6a7b7279173173d3a408a500",
+      "issued_by": "synth-mcp-q42-compiler",
+      "at": "2026-11-18T06:37:00Z",
+      "scope": "ECO-WP-07A compiled graph"
+    },
+    {
+      "id": "ev-index-q42-compile-sparql",
+      "kind": "build",
+      "artifact_refs": [
+        "dist/index.q42"
+      ],
+      "input_refs": [
+        "ontology/index.ttl"
+      ],
+      "method_ref": "mcp_synth_synth_compile_q42 + query_sparql(vault_path)",
+      "result": "Compiled intenteco-vurs-07a-index.q42 (70 quins, 73 lex terms) and verified 70 returned bindings via query_sparql.",
+      "status": "passed",
+      "location": "C:\\github\\eco-intent\\vombatus-ursinus\\dist\\index.q42",
+      "content_sha256": "415733b33bae31d37cec39a34b58e7be93794d68f6c8477416abe0d5ea535a00",
+      "issued_by": "synth-mcp-q42-compiler",
+      "at": "2026-11-18T06:37:00Z",
+      "scope": "ECO-WP-07A compiled package index"
+    },
+    {
+      "id": "ev-cad-vibe-source",
+      "kind": "source_inspection",
+      "artifact_refs": [
+        "source/vombatus-ursinus.vibe"
+      ],
+      "input_refs": [
+        "ontology/taxon.ttl"
+      ],
+      "method_ref": "20-24pt multi-station cubic lofting + boolean_3d rhinarium nostrils + 98-part 3-layer assembly",
+      "result": "Authored 98-part 3-layer zoological CAD (Integument + pelvic_dermal_shield + inset Osteology/Myology + 5-claw manus + syndactylous pes + burrow_apron_pad).",
+      "status": "passed",
+      "location": "C:\\github\\eco-intent\\vombatus-ursinus\\source\\vombatus-ursinus.vibe",
+      "content_sha256": "c39f2aa3ffed30ff46f9a0d69086b2f28299ffd5581b17cc828c4db8b8050eb1",
+      "issued_by": "zoological-cad-producer (ECO-WP-07B)",
+      "at": "2026-11-18T07:02:00Z",
+      "scope": "ECO-WP-07B CAD VibeScript source"
+    },
+    {
+      "id": "ev-actuation-vibe-check",
+      "kind": "build",
+      "artifact_refs": [
+        "source/actuation.vibe"
+      ],
+      "input_refs": [
+        "ontology/taxon.ttl"
+      ],
+      "method_ref": "mcp_synth_vibe_check",
+      "result": "vibe_check passed (valid: true, 0 errors, 0 SHACL violations) for InstanceState64 stages, fossorial digging torque, rump-block defense, and aura hooks.",
+      "status": "passed",
+      "location": "C:\\github\\eco-intent\\vombatus-ursinus\\source\\actuation.vibe",
+      "content_sha256": "f6d2c4e1f03ea6ae6e30650061c2becb54e75b2caba8da848fe61fffdd7ada59",
+      "issued_by": "synth-mcp-vibe-check",
+      "at": "2026-11-18T07:02:00Z",
+      "scope": "ECO-WP-07B actuation VibeScript"
+    },
+    {
+      "id": "ev-hmc-production",
+      "kind": "build",
+      "artifact_refs": [
+        "dist/vombatus-ursinus.hmc",
+        "dist/vombatus-ursinus.10d",
+        "dist/vombatus-ursinus-pbr.10d",
+        "dist/vombatus-ursinus-field.emf",
+        "dist/vombatus-ursinus-call.qac",
+        "dist/rig-packet.json",
+        "dist/receipt.json"
+      ],
+      "input_refs": [
+        "source/vombatus-ursinus.vibe"
+      ],
+      "method_ref": "mcp_synth_synth_produce_present (profile=files, quality_profile=production16, strict_replay_verified=true)",
+      "result": "Produced intenteco-vurs-07b-r5.hmc (3178572 B, sha256 eb25daf0b9d925177085fd4b8907b621be5b3af71009de21cda3dca479719d2c) with 12 verified resources and strict_replay_verified=true.",
+      "status": "passed",
+      "location": "C:\\github\\eco-intent\\vombatus-ursinus\\dist\\vombatus-ursinus.hmc",
+      "content_sha256": "eb25daf0b9d925177085fd4b8907b621be5b3af71009de21cda3dca479719d2c",
+      "issued_by": "synth-mcp.exe (synth.production)",
+      "at": "2026-11-18T07:02:00Z",
+      "scope": "ECO-WP-07B HMC package & multimodal outputs"
+    },
+    {
+      "id": "ev-native-10d-preview",
+      "kind": "visual_inspection",
+      "artifact_refs": [
+        "previews/front-view-assumed.png",
+        "previews/side-view-assumed.png",
+        "previews/three-quarter-view-assumed.png",
+        "previews/turnaround.png",
+        "previews/blueprint.svg",
+        "previews/spectral-slice.png",
+        "previews/review-receipt.json"
+      ],
+      "input_refs": [
+        "dist/vombatus-ursinus.10d"
+      ],
+      "method_ref": "QualiaDB PortalGpu native offscreen preview (2048x2048) + agent read_file inspection",
+      "result": "Rendered 27799 triangles / 14162 vertices; visually verified stocky barrel silhouette, broad blunt muzzle, bare dark rhinarium, symmetric eyes, cupped pinnae, pelvic_dermal_shield, 5 forepaw spade claws, grounded y=0.0 stance, and zero osteology/myology poke-through.",
+      "status": "passed",
+      "location": "C:\\github\\eco-intent\\vombatus-ursinus\\previews\\review-receipt.json",
+      "content_sha256": "360cf48108a88eb601247b75a3bc6ef7e841cdeec5edb98014e304b20e4e97bc",
+      "issued_by": "zoological-cad-producer (ECO-WP-07B)",
+      "at": "2026-11-18T07:02:00Z",
+      "scope": "ECO-WP-07B orthographic previews"
+    }
+  ],
+  "review_index": [
+    {
+      "id": "rev-domain-pending",
+      "domain": "domain",
+      "reviewer": "unassigned-zoological-domain-reviewer",
+      "reviewer_kind": "human",
+      "authority_ref": "ECO-WP-GATE",
+      "decision": "pending",
+      "artifact_refs": [
+        "ontology/taxon.ttl",
+        "dossier/claims.json"
+      ],
+      "evidence_refs": [
+        "ev-taxon-ttl",
+        "ev-taxon-q42-compile-sparql"
+      ],
+      "scope": "Zoological specimen selection, fossorial morphometrics, ROM & lifecycle domain sign-off",
+      "at": "2026-11-18T06:37:00Z",
+      "decision_record_ref": "pending-eco-wp-gate"
+    },
+    {
+      "id": "rev-visual-pending",
+      "domain": "visual",
+      "reviewer": "unassigned-visual-reviewer",
+      "reviewer_kind": "human",
+      "authority_ref": "ECO-WP-GATE",
+      "decision": "pending",
+      "artifact_refs": [
+        "dossier/claims.json",
+        "dist/vombatus-ursinus.hmc",
+        "dist/vombatus-ursinus.10d",
+        "previews/front-view-assumed.png",
+        "previews/side-view-assumed.png",
+        "previews/three-quarter-view-assumed.png",
+        "previews/turnaround.png",
+        "previews/blueprint.svg",
+        "previews/review-receipt.json"
+      ],
+      "evidence_refs": [
+        "ev-hmc-production",
+        "ev-native-10d-preview"
+      ],
+      "scope": "Orthographic PNG/SVG and film/game/cartoon profile visual review (ECO-WP-07B previews ready; awaiting ECO-WP-GATE human sign-off)",
+      "at": "2026-11-18T07:02:00Z",
+      "decision_record_ref": "pending-eco-wp-gate"
+    },
+    {
+      "id": "rev-rights-pending",
+      "domain": "rights",
+      "reviewer": "unassigned-rights-biocultural-reviewer",
+      "reviewer_kind": "human",
+      "authority_ref": "ECO-WP-GATE",
+      "decision": "pending",
+      "artifact_refs": [
+        "ontology/taxon.ttl",
+        "dossier/claims.json"
+      ],
+      "evidence_refs": [
+        "ev-taxon-ttl"
+      ],
+      "scope": "Biocultural Country provenance & source rights/SPC review",
+      "at": "2026-11-18T06:37:00Z",
+      "decision_record_ref": "pending-eco-wp-gate"
+    }
+  ],
+  "subject_specific_claims": [],
+  "native_gate_report_ref": ""
+}

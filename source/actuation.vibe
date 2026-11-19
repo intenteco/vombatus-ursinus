@@ -1,0 +1,220 @@
+module <https://intenteco.org/vombatus-ursinus/actuation>;
+import "vibe:0.1/math" as m;
+import "vibe:0.3/nquin" as nquin;
+
+requires [capability("capability.invoke")];
+
+// Vombatus ursinus (Shaw, 1800) — Bare-Nosed / Common Wombat Runtime Actuation & Ethogram
+// Implements InstanceState64 ontogenetic stages (pouch_young, juvenile_at_heel, subadult,
+// adult_female, adult_male), fossorial rotary scratch-digging, quadrupedal waddle walk,
+// burrow-defense rump-block reflex, grazing jaw mastication, and thermal/acoustic aura hooks.
+
+let parity = nquin.wire.compute_wire_parity([86, 117, 114, 115, 65]);
+
+// Resolve deterministic InstanceState64 ontogenetic stage and morphometric bounds
+pure fn resolve_instance_state64(
+    seed: i64,
+    ontogenetic_age_norm: f64,
+    site_vigor: f64,
+    sex_dimorphism_flag: i64,
+    pouch_occupancy_flag: i64,
+    pelage_grizzle_melanin: f64,
+    mange_stress_01: f64
+) -> Record {
+    let age = m.clamp(ontogenetic_age_norm, 0.0, 1.0);
+    let vigor = m.clamp(site_vigor, 0.45, 1.25);
+
+    if age < 0.16 {
+        return {
+            stage_id: "pouch_young",
+            age_norm: age,
+            height_scale: (0.14 + (age / 0.16) * 0.20) * vigor,
+            independent_locomotion: false,
+            supports_pouch_occupancy: false,
+            pelage_grizzle_melanin: m.clamp(pelage_grizzle_melanin, 0.0, 1.0),
+            mange_stress_01: m.clamp(mange_stress_01, 0.0, 1.0),
+            seed: seed
+        };
+    };
+    if age < 0.36 {
+        let t = (age - 0.16) / 0.20;
+        return {
+            stage_id: "juvenile_at_heel",
+            age_norm: age,
+            height_scale: (0.34 + t * 0.28) * vigor,
+            independent_locomotion: true,
+            supports_pouch_occupancy: false,
+            pelage_grizzle_melanin: m.clamp(pelage_grizzle_melanin, 0.0, 1.0),
+            mange_stress_01: m.clamp(mange_stress_01, 0.0, 1.0),
+            seed: seed
+        };
+    };
+    if age < 0.58 {
+        let t = (age - 0.36) / 0.22;
+        return {
+            stage_id: "subadult",
+            age_norm: age,
+            height_scale: (0.62 + t * 0.24) * vigor,
+            independent_locomotion: true,
+            supports_pouch_occupancy: false,
+            pelage_grizzle_melanin: m.clamp(pelage_grizzle_melanin, 0.0, 1.0),
+            mange_stress_01: m.clamp(mange_stress_01, 0.0, 1.0),
+            seed: seed
+        };
+    };
+
+    let t = (age - 0.58) / 0.42;
+    if sex_dimorphism_flag == 1 {
+        return {
+            stage_id: "adult_male",
+            age_norm: age,
+            height_scale: (0.92 + t * 0.23) * vigor,
+            independent_locomotion: true,
+            supports_pouch_occupancy: false,
+            pelage_grizzle_melanin: m.clamp(pelage_grizzle_melanin, 0.0, 1.0),
+            mange_stress_01: m.clamp(mange_stress_01, 0.0, 1.0),
+            seed: seed
+        };
+    };
+
+    return {
+        stage_id: "adult_female",
+        age_norm: age,
+        height_scale: (0.86 + t * 0.19) * vigor,
+        independent_locomotion: true,
+        supports_pouch_occupancy: pouch_occupancy_flag == 1,
+        pelage_grizzle_melanin: m.clamp(pelage_grizzle_melanin, 0.0, 1.0),
+        mange_stress_01: m.clamp(mange_stress_01, 0.0, 1.0),
+        seed: seed
+    };
+}
+
+// Evaluate fossorial excavation torque (olecranon index 0.34, triceps/pectoralis soil shear)
+pure fn evaluate_fossorial_dig_power(dig_effort_01: f64, soil_compaction_01: f64) -> Record {
+    let effort = m.clamp(dig_effort_01, 0.0, 1.0);
+    let soil = m.clamp(soil_compaction_01, 0.0, 1.0);
+    let olecranon_index = 0.34;
+    let peak_force_n = 185.0 * effort * (0.65 + 0.35 * soil);
+    let stroke_hz = 1.6 + 0.9 * effort * (1.0 - 0.35 * soil);
+    return {
+        olecranon_index: olecranon_index,
+        peak_shear_force_n: peak_force_n,
+        alternating_stroke_hz: stroke_hz
+    };
+}
+
+// Locomotor & burrow-defense state machine (waddle walk, rotary scratch-digging, rump-block, mastication)
+effect fn step_pulse(
+    speed_m_s: f64,
+    turn_rate_rad_s: f64,
+    dig_effort_01: f64,
+    threat_01: f64,
+    in_burrow_01: f64,
+    dt_sec: f64,
+    state64: Record
+) budget(steps: 5000) -> Record {
+    let spd = m.clamp(speed_m_s, 0.0, 11.1);
+    let threat = m.clamp(threat_01, 0.0, 1.0);
+    let dig = m.clamp(dig_effort_01, 0.0, 1.0);
+    let in_burrow = m.clamp(in_burrow_01, 0.0, 1.0);
+
+    let mut behavior_mode = "quadrupedal_waddle_graze";
+    let mut macro_state = "grazing";
+    let mut cervical_pitch = -0.22;
+    let mut rump_wedge_01 = 0.0;
+    let mut jaw_chew_hz = 2.1;
+
+    if !state64.independent_locomotion {
+        behavior_mode = "pouch_sheltered";
+        macro_state = "idle";
+        cervical_pitch = -0.08;
+        jaw_chew_hz = 0.0;
+    } else if threat > 0.68 && in_burrow > 0.5 {
+        behavior_mode = "burrow_rump_block_defense";
+        macro_state = "idle";
+        cervical_pitch = -0.35;
+        rump_wedge_01 = 0.95;
+        jaw_chew_hz = 0.0;
+    } else if threat > 0.72 && spd >= 3.5 {
+        behavior_mode = "defensive_gallop_retreat";
+        macro_state = "sprint";
+        cervical_pitch = 0.05;
+        jaw_chew_hz = 0.0;
+    } else if dig > 0.45 {
+        behavior_mode = "rotary_scratch_digging";
+        macro_state = "foraging";
+        cervical_pitch = -0.42;
+        jaw_chew_hz = 0.0;
+    } else if spd >= 0.4 && spd <= 1.6 {
+        behavior_mode = "quadrupedal_waddle_graze";
+        macro_state = "grazing";
+        cervical_pitch = -0.28;
+        jaw_chew_hz = 2.4;
+    };
+
+    let rig_step = capability.invoke("hypermedia.kinetics.rig_biomechanical_archetype", {
+        archetype: "vombatid_fossorial",
+        macro_state: macro_state,
+        speed_m_s: spd,
+        turn_rate_rad_s: m.clamp(turn_rate_rad_s, -2.5, 2.5),
+        dt_sec: m.clamp(dt_sec, 0.001, 0.1),
+        head_pitch: cervical_pitch,
+        emit_emf_qac: false
+    });
+
+    let nla = capability.invoke("hypermedia.kinetics.evaluate_nla_channelbag", {
+        strips: [
+            {
+                name: "waddle_to_dig_or_rump_wedge",
+                start_time: 0.0,
+                end_time: 1.0,
+                weight: 1.0,
+                blend_mode: "replace",
+                start_val: [0.0, cervical_pitch, 0.0],
+                end_val: [0.0, 0.18, rump_wedge_01],
+                transition: "cubic"
+            }
+        ],
+        eval_time: m.clamp(m.max(dig, rump_wedge_01), 0.0, 1.0)
+    });
+
+    let dig_power = evaluate_fossorial_dig_power(dig, 0.55);
+
+    return {
+        behavior_mode: behavior_mode,
+        macro_state: macro_state,
+        cervical_pitch_rad: cervical_pitch,
+        rump_wedge_01: rump_wedge_01,
+        jaw_chew_hz: jaw_chew_hz,
+        dig_power: dig_power,
+        nla_eval: nla,
+        rig: rig_step
+    };
+}
+
+// Aura hook: hypometabolic bio-thermal IR (34.8 C, 32.0 W) & defensive low raspy grunt/hiss (110-420 Hz)
+effect fn evaluate_aura(
+    bmr_watts: f64,
+    body_temp_c: f64,
+    threat_01: f64
+) budget(steps: 2000) -> Record {
+    let metabolic_gain = m.clamp(bmr_watts / 32.0, 0.5, 1.8);
+    let defensive_vocal_active = threat_01 > 0.55;
+    let grunt_amplitude = if defensive_vocal_active { 0.82 } else { 0.0 };
+
+    return {
+        body_temp_c: body_temp_c,
+        bmr_watts: bmr_watts,
+        ir_wavelength_nm: 9420.0,
+        metabolic_gain: metabolic_gain,
+        defensive_grunt_active: defensive_vocal_active,
+        defensive_grunt_amplitude: grunt_amplitude,
+        call_fundamental_hz: 112.0,
+        call_rasp_band_hz: [110.0, 420.0]
+    };
+}
+
+// Default pulse / aura verification binding for adult female grazing & burrow-apron state
+let default_state64 = resolve_instance_state64(702, 0.78, 1.0, 0, 1, 0.52, 0.02);
+let pulse = step_pulse(1.05, 0.03, 0.20, 0.15, 0.0, 0.033, default_state64);
+let aura = evaluate_aura(32.0, 34.8, 0.15);

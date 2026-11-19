@@ -1,0 +1,11 @@
+{
+  "schema": "synth.project/v1",
+  "name": "vombatus-ursinus",
+  "brief": "Vombatus ursinus (Shaw, 1800) — Bare-Nosed / Common Wombat hypermedia species repository (South-Eastern Australia corridor). ECO-WP-07A covers ontological, fossorial osteology/myology, rump-shield & distal-colon biomechanics, joint ROM, InstanceState64 ontogeny, grazing ecology, and biocultural Country provenance; ECO-WP-07B will produce the 3-layer .vibe CAD and .hmc distribution.",
+  "sources": [
+    "ontology",
+    "source"
+  ],
+  "working": "dossier",
+  "delivered": "dist"
+}

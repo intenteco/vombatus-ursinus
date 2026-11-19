@@ -1,0 +1,102 @@
+{
+  "schema": "intenteco.lod-manifest/v1",
+  "slug": "vombatus-ursinus",
+  "did": "did:q42:taxon:vombatus_ursinus",
+  "kingdom": "fauna",
+  "source_10d": {
+    "file": "vombatus-ursinus.10d",
+    "bytes": 413176,
+    "sha256": "e2082353c35b107a7cac79fd8938f44678965d8a27c8edd34e98fa869eda81d0",
+    "vertices": 14162,
+    "triangles": 27799,
+    "bounds_min": [
+      -0.41999998688697815,
+      -0.01600000075995922,
+      -0.6600000262260437
+    ],
+    "bounds_max": [
+      0.41999998688697815,
+      0.3947024941444397,
+      0.699999988079071
+    ]
+  },
+  "synth_hmc": "C:\\github\\synth\\production\\intenteco-lod-vombatus-ursinus-1795048114-63b798.hmc",
+  "synth_export_dir": "C:\\github\\synth\\production\\intenteco-lod-vombatus-ursinus-1795048114-63b798",
+  "lods": {
+    "lod0": {
+      "bytes": 365328,
+      "sha256": "6c853a4858745e0fdf74fb799b4c04c2be57831b6d89959b2e0995723c6c80cc",
+      "vertices": 14162,
+      "triangles": 27799,
+      "bounds_min": [
+        -0.41999998688697815,
+        -0.01600000075995922,
+        -0.6600000262260437
+      ],
+      "bounds_max": [
+        0.41999998688697815,
+        0.3947019875049591,
+        0.699999988079071
+      ],
+      "sections": [
+        "QuantizedMesh",
+        "FieldSidecar",
+        "SurfaceReading"
+      ],
+      "file": "vombatus-ursinus-lod0.10d",
+      "distance_band_m": "0-25m",
+      "local_url": "/intenteco/vombatus-ursinus/dist/lods/vombatus-ursinus-lod0.10d",
+      "remote_url": "https://raw.githubusercontent.com/intenteco/vombatus-ursinus/main/dist/lods/vombatus-ursinus-lod0.10d"
+    },
+    "lod1": {
+      "bytes": 97024,
+      "sha256": "dc47216f44d164f89113c6e6a5dcb42ac865d30aec07946c9edcca7a786b8f36",
+      "vertices": 3826,
+      "triangles": 7200,
+      "bounds_min": [
+        -0.41999998688697815,
+        -0.01600000075995922,
+        -0.6600000262260437
+      ],
+      "bounds_max": [
+        0.41999998688697815,
+        0.3928914964199066,
+        0.699999988079071
+      ],
+      "sections": [
+        "QuantizedMesh",
+        "FieldSidecar",
+        "SurfaceReading"
+      ],
+      "file": "vombatus-ursinus-lod1.10d",
+      "distance_band_m": "25-90m",
+      "local_url": "/intenteco/vombatus-ursinus/dist/lods/vombatus-ursinus-lod1.10d",
+      "remote_url": "https://raw.githubusercontent.com/intenteco/vombatus-ursinus/main/dist/lods/vombatus-ursinus-lod1.10d"
+    },
+    "lod2": {
+      "bytes": 31092,
+      "sha256": "c6e90c5f839da4d1031b9518bff6d5166d8a94d3126dd7882da23fa9cebf8c5b",
+      "vertices": 1259,
+      "triangles": 2200,
+      "bounds_min": [
+        -0.41999998688697815,
+        -0.01600000075995922,
+        -0.6600000262260437
+      ],
+      "bounds_max": [
+        0.41999998688697815,
+        0.3859311044216156,
+        0.699999988079071
+      ],
+      "sections": [
+        "QuantizedMesh",
+        "FieldSidecar",
+        "SurfaceReading"
+      ],
+      "file": "vombatus-ursinus-lod2.10d",
+      "distance_band_m": ">90m",
+      "local_url": "/intenteco/vombatus-ursinus/dist/lods/vombatus-ursinus-lod2.10d",
+      "remote_url": "https://raw.githubusercontent.com/intenteco/vombatus-ursinus/main/dist/lods/vombatus-ursinus-lod2.10d"
+    }
+  }
+}

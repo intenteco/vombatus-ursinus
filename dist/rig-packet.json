@@ -1,0 +1,1 @@
+{"schema":"qualia.small-llm-behavior/v1","macro":"grazing","hooks":{"head_yaw":0.12,"head_pitch":-0.56,"jaw_open_01":0.48,"jaw_chew_hz":2.6,"ear_swivel":[0.35,-0.25],"eye_blink_01":0.15,"forepaw_reach_01":0.72,"forepaw_grasp_01":0.68,"hindlimb_crouch_01":0.35,"tail_pitch":0.14,"tail_yaw":0.08,"breath_hz":1.4}}

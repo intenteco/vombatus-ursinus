@@ -1,0 +1,43 @@
+{
+  "schema": "synth.jobs/v1",
+  "items": [
+    {
+      "id": "vombatus-ursinus-taxon-ttl",
+      "kind": "compile",
+      "title": "Vombatus ursinus taxon & biophysical Turtle",
+      "source_path": "eco-intent/vombatus-ursinus/ontology/taxon.ttl",
+      "out_q42": "intenteco-vurs-07a-taxon.q42",
+      "interval_secs": 0,
+      "enabled": false,
+      "created_at": 1794983400,
+      "updated_at": 1794983740,
+      "next_run_at": 0,
+      "last_run_at": 1794983740,
+      "last_status": "ok",
+      "last_sha256": "d885c7be96215ec0b4457e445bdc21e80a8a9e9b6a7b7279173173d3a408a500",
+      "last_q42": "C:\\github\\eco-intent\\vombatus-ursinus\\dist\\taxon.q42",
+      "production_q42": "C:\\github\\synth\\production\\intenteco-vurs-07a-taxon.q42",
+      "quin_count": 573,
+      "run_count": 1
+    },
+    {
+      "id": "vombatus-ursinus-index-ttl",
+      "kind": "compile",
+      "title": "Vombatus ursinus DCAT index Turtle",
+      "source_path": "eco-intent/vombatus-ursinus/ontology/index.ttl",
+      "out_q42": "intenteco-vurs-07a-index.q42",
+      "interval_secs": 0,
+      "enabled": false,
+      "created_at": 1794983400,
+      "updated_at": 1794983719,
+      "next_run_at": 0,
+      "last_run_at": 1794983719,
+      "last_status": "ok",
+      "last_sha256": "415733b33bae31d37cec39a34b58e7be93794d68f6c8477416abe0d5ea535a00",
+      "last_q42": "C:\\github\\eco-intent\\vombatus-ursinus\\dist\\index.q42",
+      "production_q42": "C:\\github\\synth\\production\\intenteco-vurs-07a-index.q42",
+      "quin_count": 70,
+      "run_count": 1
+    }
+  ]
+}
